@@ -21,3 +21,21 @@ Johnny Depp: 0.0 (Wins: 0, Nominations: 3)
 Charlie Chaplin: 0.25 (Wins: 1, Nominations: 4)
 Finished!
 ```
+
+Or run it without any parameters for a default list of actors: 
+
+```
+$ ruby conversion_rate_for_actors.rb 
+Calculating conversion rate... 
+Robert Downey Jr: 0.0 (Wins: 0, Nominations: 2)
+Tom Cruise: 0.0 (Wins: 0, Nominations: 3)
+Johnny Depp: 0.0 (Wins: 0, Nominations: 3)
+Meryl Streep: 0.1333 (Wins: 2, Nominations: 15)
+Brad Pitt: 0.2 (Wins: 1, Nominations: 5)
+Jennifer Lawrence: 0.3333 (Wins: 1, Nominations: 3)
+Emma Stone: 0.0 (Wins: 0, Nominations: 0)
+Jamie Foxx: 0.5 (Wins: 1, Nominations: 2)
+Anne Hathaway: 0.5 (Wins: 1, Nominations: 2)
+Matt Damon: 0.3333 (Wins: 1, Nominations: 3)
+Finished! 
+```
