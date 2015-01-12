@@ -11,7 +11,8 @@ Execute with arguments: `--actors "Actor 1","Actor 2"`
 ## Example
 
 ```
-$ ruby conversion_rate_for_actors.rb --actors "Leonardo Dicaprio","Meryl Streep","Matthew McConnaughey","Johnny Depp","Charlie Chaplin"
+$ ruby conversion_rate_for_actors.rb --actors "Leonardo Dicaprio","Meryl Streep",
+"Matthew McConnaughey","Johnny Depp","Charlie Chaplin"
 Calculating conversion rate...
 Leonardo Dicaprio: 0.0 (Wins: 0, Nominations: 5)
 Meryl Streep: 0.1333 (Wins: 2, Nominations: 15)
