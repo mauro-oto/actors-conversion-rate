@@ -4,7 +4,7 @@ Calculates the conversion rate of actors in the Oscars. Uses Wolfram Alpha's API
 ## Setup
 Run `bundle install`
 
-Run `export WOLFRAM_ALPHA_API_KEY=your_wolfram_alpha_api_key` (sign up for one [here](http://products.wolframalpha.com/api/))
+Run `export WOLFRAM_ALPHA_API_KEY=your_wolfram_alpha_api_key` from the terminal (sign up for one [here](http://products.wolframalpha.com/api/))
 
 Execute with arguments: `--actors "Actor 1","Actor 2"`
 
