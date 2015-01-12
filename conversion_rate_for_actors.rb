@@ -20,9 +20,10 @@ class OscarConversionRate
     puts "Calculating conversion rate... "
     actors.each do |actor|
       nominations, wins = count_nominations_and_wins_for(actor)
-      nominations += wins 
+      nominations += wins
       result = wins.to_f / nominations
       result = 1 if result.infinite?
+      result = 0 if result.nan?
       puts "#{titleize(actor).color(:green)}: #{result.round(4).to_s.color(:cyan)} (Wins: #{wins.to_s.color(:red)}, Nominations: #{nominations.to_s.color(:magenta)})"
     end
     puts "Finished! "
@@ -41,4 +42,17 @@ class OscarConversionRate
 end
 
 oscars = OscarConversionRate.new
+if @options[:actors].nil?
+  @options[:actors] =
+  ["robert downey jr",
+   "tom cruise",
+   "johnny depp",
+   "meryl streep",
+   "brad pitt",
+   "jennifer lawrence",
+   "emma stone",
+   "jamie foxx",
+   "anne hathaway",
+   "matt damon"]
+end
 puts oscars.conversion_rate_for(@options[:actors])
